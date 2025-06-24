@@ -298,15 +298,15 @@ body {
 
 /* Quick Link Icons */
 .quick-link-item:nth-child(1) .quick-link-icon {
-    background-image: url('Icon/checklist-icon.png');
+    background-image: url('Icon/Checklist-icon.png');
 }
 
 .quick-link-item:nth-child(2) .quick-link-icon {
-    background-image: url('Icon/readiness-icon.png');
+    background-image: url('Icon/Readiness-icon.png');
 }
 
 .quick-link-item:nth-child(3) .quick-link-icon {
-    background-image: url('Icon/reference-icon.png');
+    background-image: url('Icon/Reference-icon.png');
 }
 
 /* Compliance Support Styles */
@@ -335,7 +335,7 @@ body {
 .enhesa-logo {
     width: 300px;
     height: 150px;
-    background-image: url('./Icon/enhesa-logo.png');
+    background-image: url('./Icon/Enhesa-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -343,15 +343,15 @@ body {
 
 /* Compliance Quick Link Icons */
 .compliance-content .quick-link-item:nth-child(1) .quick-link-icon {
-    background-image: url('./Icon/website-icon.png');
+    background-image: url('Icon/Website-icon.png');
 }
 
 .compliance-content .quick-link-item:nth-child(2) .quick-link-icon {
-    background-image: url('./Icon/user-icon.png');
+    background-image: url('Icon/User-icon.png');
 }
 
 .compliance-content .quick-link-item:nth-child(3) .quick-link-icon {
-    background-image: url('./Icon/training-icon.png');
+    background-image: url('Icon/Training-icon.png');
 }
 
 /* Assessment Styles */
@@ -424,28 +424,28 @@ body {
 
 /* Corporate Assessment Card Icons */
 #corporate-cards .assessment-card:nth-child(1) .card-icon {
-    background-image: url('./Icon/scorecard-icon.png');
+    background-image: url('Icon/Scorecard-icon.png');
 }
 
 #corporate-cards .assessment-card:nth-child(2) .card-icon {
-    background-image: url('./Icon/process-icon.png');
+    background-image: url('Icon/Process-icon.png');
 }
 
 #corporate-cards .assessment-card:nth-child(3) .card-icon {
-    background-image: url('./Icon/training-icon.png');
+    background-image: url('Icon/Training-icon.png');
 }
 
 /* Small Site Assessment Card Icons */
 #small-site-cards .assessment-card:nth-child(1) .card-icon {
-    background-image: url('./Icon/lightbulb-icon.png');
+    background-image: url('Icon/Lightbulb-icon.png');
 }
 
 #small-site-cards .assessment-card:nth-child(2) .card-icon {
-    background-image: url('./Icon/document-icon.png');
+    background-image: url('Icon/Document-icon.png');
 }
 
 #small-site-cards .assessment-card:nth-child(3) .card-icon {
-    background-image: url('./Icon/checklist-icon.png');
+    background-image: url('Icon/Checklist-icon.png');
 }
 
 .assessment-card h3 {
