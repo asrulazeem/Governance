@@ -408,15 +408,15 @@ body {
 
 /* Compliance Quick Link Icons */
 .compliance-content .quick-link-item:nth-child(1) .quick-link-icon {
-    background-image: url('./Icon/website-icon.png');
+    background-image: url('./Icon/Website-icon.png');
 }
 
 .compliance-content .quick-link-item:nth-child(2) .quick-link-icon {
-    background-image: url('./Icon/user-icon.png');
+    background-image: url('./Icon/User-icon.png');
 }
 
 .compliance-content .quick-link-item:nth-child(3) .quick-link-icon {
-    background-image: url('./Icon/training-icon.png');
+    background-image: url('./Icon/Training-icon.png');
 }
 
 /* Assessment Styles */
