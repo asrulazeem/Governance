@@ -16,7 +16,7 @@ body {
 /* Header Styles */
 .header {
     background-color: white;
-    padding: 10px 20px;
+    padding: 0px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +106,7 @@ body {
 .banner {
     background: linear-gradient(90deg, #8bc34a 0%, #8bc34a 5%, #1e4a72 15%, #1e4a72 100%);
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     position: relative;
 }
