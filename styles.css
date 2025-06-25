@@ -39,14 +39,14 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     list-style: none;
 }
 
 .nav-menu li a {
     font-weight: 500;
     cursor: pointer;
-    padding: 5px 0;
+    padding: 5px 20px;
     color: #8bc34a;
     text-decoration: none;
 }
@@ -61,11 +61,29 @@ body {
     gap: 15px;
 }
 
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .search-box {
-    padding: 8px 12px;
+    padding: 8px 12px 8px 40px;
     border: 2px solid #8bc34a;
     border-radius: 4px;
     outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url('./Icon/search-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
 }
 
 .welcome-btn {
@@ -192,7 +210,7 @@ body {
 .aim-logo {
     width: 300px;
     height: 200px;
-    background-image: url('Icon/Aim-logo.png');
+    background-image: url('./Icon/aim-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -296,17 +314,64 @@ body {
     background-position: center;
 }
 
-/* Quick Link Icons */
-.quick-link-item:nth-child(1) .quick-link-icon {
-    background-image: url('Icon/Checklist-icon.png');
+/* Dropdown Container */
+.dropdown-container {
+    position: relative;
 }
 
-.quick-link-item:nth-child(2) .quick-link-icon {
-    background-image: url('Icon/Readiness-icon.png');
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    min-width: 200px;
 }
 
-.quick-link-item:nth-child(3) .quick-link-icon {
-    background-image: url('Icon/Reference-icon.png');
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #2196f3;
+}
+
+/* AIM Quick Link Icons - 3 icons */
+.aim-content .quick-link-item:nth-child(1) .quick-link-icon {
+    background-image: url('./Icon/Checklist-icon.png');
+}
+
+.aim-content .quick-link-item:nth-child(2) .quick-link-icon {
+    background-image: url('./Icon/Readiness-icon.png');
+}
+
+.aim-content .quick-link-item:nth-child(3) .quick-link-icon {
+    background-image: url('./Icon/Reference-icon.png');
 }
 
 /* Compliance Support Styles */
@@ -335,7 +400,7 @@ body {
 .enhesa-logo {
     width: 300px;
     height: 150px;
-    background-image: url('./Icon/Enhesa-logo.png');
+    background-image: url('./Icon/enhesa-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -343,15 +408,15 @@ body {
 
 /* Compliance Quick Link Icons */
 .compliance-content .quick-link-item:nth-child(1) .quick-link-icon {
-    background-image: url('Icon/Website-icon.png');
+    background-image: url('./Icon/website-icon.png');
 }
 
 .compliance-content .quick-link-item:nth-child(2) .quick-link-icon {
-    background-image: url('Icon/User-icon.png');
+    background-image: url('./Icon/user-icon.png');
 }
 
 .compliance-content .quick-link-item:nth-child(3) .quick-link-icon {
-    background-image: url('Icon/Training-icon.png');
+    background-image: url('./Icon/training-icon.png');
 }
 
 /* Assessment Styles */
@@ -424,28 +489,28 @@ body {
 
 /* Corporate Assessment Card Icons */
 #corporate-cards .assessment-card:nth-child(1) .card-icon {
-    background-image: url('Icon/Scorecard-icon.png');
+    background-image: url('./Icon/Scorecard-icon.png');
 }
 
 #corporate-cards .assessment-card:nth-child(2) .card-icon {
-    background-image: url('Icon/Process-icon.png');
+    background-image: url('./Icon/Process-icon.png');
 }
 
 #corporate-cards .assessment-card:nth-child(3) .card-icon {
-    background-image: url('Icon/Training-icon.png');
+    background-image: url('./Icon/Training-icon.png');
 }
 
 /* Small Site Assessment Card Icons */
 #small-site-cards .assessment-card:nth-child(1) .card-icon {
-    background-image: url('Icon/Lightbulb-icon.png');
+    background-image: url('./Icon/Lightbulb-icon.png');
 }
 
 #small-site-cards .assessment-card:nth-child(2) .card-icon {
-    background-image: url('Icon/Document-icon.png');
+    background-image: url('./Icon/Document-icon.png');
 }
 
 #small-site-cards .assessment-card:nth-child(3) .card-icon {
-    background-image: url('Icon/Checklist-icon.png');
+    background-image: url('./Icon/Checklist-icon.png');
 }
 
 .assessment-card h3 {
@@ -486,30 +551,32 @@ body {
 
 /* Footer */
 .footer {
-    background: white url('./Icon/Footer.png') no-repeat center bottom;
-    background-size: cover;
-    padding: 20px;
+    background: white;
+    padding: 30px 20px 20px;
     margin-top: auto;
     position: relative;
-    overflow: hidden;
 }
 
 .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
     position: relative;
-    z-index: 2;
+    min-height: 80px;
 }
 
 .social-icons {
     display: flex;
     gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 10px;
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #1e4a72;
     color: white;
@@ -517,31 +584,58 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .social-icon:hover {
     background-color: #2c5f8a;
 }
 
-.footer-text {
+/* Social icon specific styling */
+.social-icon:nth-child(1)::before {
+    content: 'f';
+}
+
+.social-icon:nth-child(2)::before {
+    content: '✉';
+}
+
+.social-icon:nth-child(3)::before {
+    content: '▶';
+}
+
+.social-icon:nth-child(4)::before {
+    content: 'in';
     font-size: 12px;
-    color: #666;
 }
 
 .footer-links {
-    display: flex;
-    gap: 10px;
-    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
 }
 
 .footer-links a {
     color: #2196f3;
     text-decoration: none;
+    font-size: 14px;
+    margin: 0 5px;
 }
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /* Responsive Design */
@@ -579,9 +673,23 @@ body {
     .logo {
         min-width: 80px;
         height: 30px;
+        display: flex;
+        align-items: center;
     }
 
     .logo img {
-        height: 30px;
+        height: 16px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        min-width: 180px;
     }
 }
