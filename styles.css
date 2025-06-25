@@ -79,7 +79,7 @@ body {
     left: 12px;
     width: 16px;
     height: 16px;
-    background-image: url('./Icon/search-icon.png');
+    background-image: url('./Icon/Search-icon.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -210,7 +210,7 @@ body {
 .aim-logo {
     width: 300px;
     height: 200px;
-    background-image: url('./Icon/aim-logo.png');
+    background-image: url('./Icon/Aim-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -400,7 +400,7 @@ body {
 .enhesa-logo {
     width: 300px;
     height: 150px;
-    background-image: url('./Icon/enhesa-logo.png');
+    background-image: url('./Icon/Enhesa-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
